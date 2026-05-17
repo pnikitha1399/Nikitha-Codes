@@ -1,0 +1,12 @@
+baseurl: ""  # empty for Netlify root deployment
+
+markdown: kramdown
+
+plugins:
+  - jekyll-email-protect
+
+collections:
+  - showcase
+  - posts
+
+timezone: Asia/Kolkata

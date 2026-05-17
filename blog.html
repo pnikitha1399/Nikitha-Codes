@@ -1,0 +1,32 @@
+---
+layout: default
+title: Blog
+---
+
+<h2 class="mb-4 fw-semibold" style="font-size:1.4rem;">A Little Page from My Notes</h2>
+
+{% assign posts = site.posts %}
+{% if posts.size > 0 %}
+<div class="row g-4">
+  {% for post in posts %}
+  <div class="col-md-6">
+    <div class="card p-4 h-100">
+      <div class="fw-semibold mb-1">{{ post.title }}</div>
+      <div class="text-muted mb-2" style="font-size:0.8rem;">{{ post.date | date: "%B %d, %Y" }}</div>
+      {% if post.excerpt %}
+      <p style="font-size:0.88rem; color:#555;">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      {% endif %}
+      <a href="{{ post.url | relative_url }}" class="text-primary" style="font-size:0.85rem;">Read more →</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% else %}
+<div class="card blog-empty">
+  <i class="fas fa-pen-nib d-block"></i>
+  <p class="mb-1 fw-semibold">Nothing here yet.</p>
+  <p class="text-muted" style="font-size:0.88rem;">
+    Posts will appear here. Add <code>.md</code> files to the <code>_posts/</code> folder to get started.
+  </p>
+</div>
+{% endif %}

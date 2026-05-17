@@ -1,0 +1,23 @@
+---
+layout: default
+title: Showcase
+---
+
+<h2 class="mb-4 fw-semibold" style="font-size:1.4rem;">Projects</h2>
+
+<div class="row g-4">
+  {% assign showcase_items = site.showcase | sort: "date" | reverse | where: "show", true %}
+  {% for item in showcase_items %}
+  <div class="col-md-6">
+    <div class="showcase-card card p-4 h-100">
+      <div class="card-title">{{ item.title }}</div>
+      <p class="card-text">{{ item.description }}</p>
+      <div class="mt-auto pt-2">
+        {% for tag in item.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

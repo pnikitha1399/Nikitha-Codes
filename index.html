@@ -1,0 +1,34 @@
+---
+layout: default
+title: Home
+---
+
+<div class="row g-4">
+
+  <!-- LEFT COLUMN: profile card + skills -->
+  <div class="col-md-4 layout2-left">
+    {% include widgets/profile_card.html %}
+  </div>
+
+  <!-- RIGHT COLUMN: bio + experience + education + showcase -->
+  <div class="col-md-8">
+
+    <!-- About / Bio -->
+    <div class="card p-4 mb-3">
+      <div class="section-heading">About Me</div>
+      <div class="bio-text">
+        {{ site.data.profile.bio | markdownify }}
+      </div>
+    </div>
+
+    <!-- Experience -->
+    {% include widgets/experience_card.html %}
+
+    <!-- Education -->
+    {% include widgets/education_card.html %}
+
+    <!-- Showcase preview -->
+    {% include widgets/showcase_card.html limit=4 %}
+
+  </div>
+</div>
