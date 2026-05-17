@@ -4,5 +4,4 @@ description: "Using a 4-layer Convolutional Neural Network in Python to distingu
 tags: [Python, CNN, PyTorch, Medical Imaging]
 show: true
 date: 2024-01-01
-github: https://github.com/pnikitha1399/Bibliomind
 ---
