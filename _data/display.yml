@@ -1,0 +1,13 @@
+navbar:
+  - title: Home
+    url: /
+  - title: Showcase
+    url: /showcase
+  - title: Blog
+    url: /blog
+
+homepage:
+  show_experience: true
+  show_education: true
+  show_showcase: true
+  num_showcase: 4

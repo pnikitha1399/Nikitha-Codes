@@ -1,0 +1,36 @@
+<div class="card profile-card text-center p-4 mb-3">
+  <div class="d-flex justify-content-center">
+    <img src="{{ site.data.profile.photo | relative_url }}" alt="{{ site.data.profile.name }}" class="profile-photo" />
+  </div>
+  <div class="profile-name">{{ site.data.profile.name }}</div>
+  <div class="profile-title">{{ site.data.profile.title }}</div>
+  <div class="profile-affil mb-2">{{ site.data.profile.affiliation }} &bull; {{ site.data.profile.location }}</div>
+
+  <div class="social-links mb-3">
+    {% for link in site.data.profile.social %}
+    <a href="{{ link.url }}" title="{{ link.name }}" target="_blank" rel="noopener"><i class="{{ link.icon }}"></i></a>
+    {% endfor %}
+  </div>
+
+  <div class="d-grid gap-2 px-2">
+    <a href="{{ site.data.profile.resume | relative_url }}" class="btn btn-outline-primary btn-resume" target="_blank">
+      <i class="fas fa-file-pdf me-1"></i> Resume / CV
+    </a>
+  </div>
+</div>
+
+<!-- Skills card -->
+<div class="card p-3 mb-3">
+  <div class="section-heading">Skills</div>
+  {% for skill in site.data.cv.skills %}
+  <div class="mb-2">
+    <div class="fw-semibold" style="font-size:0.8rem; color:#555; margin-bottom:0.25rem;">{{ skill.category }}</div>
+    <div class="skills-list">
+      {% assign items = skill.items | split: ", " %}
+      {% for item in items %}
+      <span>{{ item }}</span>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,10 @@
+<div class="card p-4 mb-3">
+  <div class="section-heading">Education</div>
+  {% for edu in site.data.cv.education %}
+  <div class="edu-item">
+    <div class="edu-degree">{{ edu.degree }}</div>
+    <div class="edu-institution">{{ edu.institution }}</div>
+    <div class="edu-period">{{ edu.location }} &bull; {{ edu.period }}</div>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,53 @@
+experience:
+  - title: Data Scientist
+    company: Incedo
+    location: Bengaluru, India
+    period: Sept. 2025 – Present
+    description: >
+      Working as a Data Scientist focused on building and optimizing GenAI applications using LLMs, LangChain, LangGraph, and FastAPI. My work involves developing production-ready AI pipelines, evaluating model performance, improving system latency, and building data-driven recommendation systems for internal decision support.
+    highlights:
+      - Developed a production-grade GenAI agentic chatbot using LangGraph and LangChain — supporting 500+ internal users across 1,000+ monthly queries.
+      - Improved enterprise chatbot response latency by 85% (20s → 3s) through optimized agent routing.
+      - Improved recommendation relevance and reduced manual analysis effort by 40% using LightGBM models and Hexbin clustering.
+      - Mentored 3 GenAI interns through LLM experimentation, evaluation frameworks, and production deployment.
+
+  - title: Software Engineer
+    company: KGS Technology
+    location: Dallas, TX, USA
+    period: Jan. 2025 – Mar. 2025
+    description: >
+      Worked on developing and optimizing ML pipelines using Python and scikit-learn, with a focus on deployment automation, compute efficiency, and performance optimization across environments.
+    highlights:
+      - Developed robust ML pipelines using Python and scikit-learn, increasing execution efficiency by 25%.
+      - Integrated CI/CD practices with Git to automate model deployment and testing across environments.
+
+  - title: Machine Learning Researcher
+    company: Physics Dept., University of Texas at Arlington
+    location: Arlington, TX, USA
+    period: Jan. 2024 – Dec. 2024
+    description: >
+      Conducted research on transformer architectures and attention mechanisms for space weather prediction, building and optimizing deep learning models in Python to improve prediction accuracy.
+    highlights:
+      - Built Transformer-based architectures to improve space weather prediction accuracy by 25%.
+      - Benchmarked model latency and throughput across GPU configurations, achieving a 20% performance gain through precision tuning.
+
+education:
+  - degree: Masters of Science in Computer Science
+    institution: University of Texas at Arlington
+    location: Arlington, TX
+    period: Aug. 2021 – Dec. 2023
+
+  - degree: Bachelor of Tech, Major in Electrical Engineering, Minor in Computer Science
+    institution: PES University
+    location: Bengaluru, India
+    period: Aug. 2017 – May 2021
+
+skills:
+  - category: Languages
+    items: Python, SQL, C, C++, HTML
+  - category: AI / ML
+    items: Transformers, LLMs, RAG, CNNs, PyTorch, Scikit-learn, LangChain, LangGraph, Pandas, NumPy
+  - category: Deployment
+    items: FastAPI, Docker, Model Monitoring, Pipeline Orchestration
+  - category: Tools
+    items: Git, Streamlit, Linux, Jupyter Notebook

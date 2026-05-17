@@ -1,0 +1,33 @@
+name: Nikitha Padmanabha
+title: Data Scientist
+affiliation: Incedo
+location: Bengaluru, India
+email: nikitha.codes13@gmail.com
+
+photo: assets/images/photos/portrait.jpg
+
+bio: |
+  Hi — I'm Nikitha. Data Scientist working on LLM applications, ML systems, and production AI workflows. Currently focused on building and optimizing GenAI pipelines using tools like LangGraph, LangChain and FastAPI — from evaluation and monitoring to deployment and performance optimization.
+
+  My interest in data science grew during my Masters at the University of Texas at Arlington, where I researched transformer architectures for space weather prediction. Since then, I have been especially drawn to problems that combine engineering, experimentation, and real-world impact.
+
+  When I'm not wrangling data, I write a blog called <em>A Little Page from My Notes</em> — a quiet corner of the internet for half-formed thoughts and things I'm learning.
+
+social:
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/nikitha13/
+    icon: fab fa-linkedin
+  - name: GitHub
+    url: https://github.com/pnikitha1399
+    icon: fab fa-github
+  - name: Substack
+    url: https://substack.com/@quietintegral
+    icon: fas fa-pen-nib
+  - name: Twitter
+    url: https://twitter.com/quietinteral
+    icon: fab fa-twitter
+  - name: Email
+    url: mailto:nikitha.codes13@gmail.com
+    icon: fas fa-envelope
+
+resume: assets/files/Resume-Nikitha_Padmanabha.pdf

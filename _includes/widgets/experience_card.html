@@ -1,0 +1,12 @@
+<div class="card p-4 mb-3">
+  <div class="section-heading">Experience</div>
+  {% for exp in site.data.cv.experience %}
+  <div class="exp-item">
+    <div class="exp-title">{{ exp.title }}</div>
+    <div class="exp-company">{{ exp.company }}</div>
+    <div class="exp-meta">{{ exp.location }} &bull; {{ exp.period }}</div>
+    <div class="exp-desc">{{ exp.description }}</div>
+  </div>
+  {% unless forloop.last %}<hr class="my-3" style="border-color:#f0f0f0;" />{% endunless %}
+  {% endfor %}
+</div>
